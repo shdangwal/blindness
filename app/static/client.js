@@ -5,6 +5,7 @@ function showPicker() {
 }
 
 function showPicked(input) {
+  el("result-label").innerHTML = "Result = ";
   el("upload-label").innerHTML = input.files[0].name;
   var reader = new FileReader();
   reader.onload = function(e) {
